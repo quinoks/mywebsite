@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="Login&Rgstr.js"></script>
+
+   <!-- Font Awsome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Login and Register</title>
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <h1 class="logo-title"><span><h6><del>FAKE</del></h6></span></h1>
+                <h1 class="logo-title"><span>News</span>Article</h1>
+                <ul class="nav">
+                  <li><a href="#">LIFESTYLE</a></li>
+                      <li><a href="#">WORLD</a></li>
+                          <li><a href="#">ENTERTAINMENT</a></li>
+                              <li><a href="#">OPINION</a></li>
+                         <li><a href="#">SPORTS</a></li>
+                    <li><a href="#">POLITICS</a></li>                  
+                </ul>
+                    <i class="fa-brands fa-facebook"></i><i>
+                     <i class="fa-brands fa-twitter"></i><i>
+                 <i class="fa-brands fa-youtube"></i><i>  
+            <i class="fa-brands fa-tiktok"></i><i>   
+        </div>    
+        <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">      
+               <li> <a href="home.html"></a>
+                     <ul style="left: 0px;">
+                 </ul>
+             </li>
+        </ul>
+    </header>
+    
+  <div class="auth-content">
+    <div id="login-form">
+        
+      <h1><i><b>Login</b></i></h1>
+      <br>
+      <form onsubmit="login(event)">
+          <label for="login-username"><b>Username:</b></label>
+            <input type="text" id="login-username" required>
+             <br>
+               <label for="login-password"><b>Password:</b></label>
+                 <input type="password" id="login-password" required>
+                   <br>
+                 <button type="submit">Login</button>
+               <div class="login-form">
+            <p>Don't have an account? <a href="#" class="register-link" onclick="showRegisterForm()">Register</a></p>
+         </div>
+      </form>
+    </div>
+
+    <div id="register-form" style="display: none;">
+         <h1>Register</h1>
+         <br>
+            <form onsubmit="register(event)">
+              <label for="register-username"><b>Username:</b></label>
+                <input type="text" id="register-username" required>
+                  <br>
+                     <label for="register-password"><b>Password:</b></label>
+                   <input type="password" id="register-password" required>
+                 <br>
+               <button type="submit">Register</button>
+             <div class="register-form">
+           <p>Already have an account? <a href="#" class="login-link" onclick="showLoginForm()">Login</a></p>
+         </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

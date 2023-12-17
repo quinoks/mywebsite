@@ -1,0 +1,16 @@
+body{
+    background-color: rgba(74, 74, 53, 0.511);
+}
+
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+    text-decoration: none;  
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
